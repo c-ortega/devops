@@ -12,3 +12,9 @@ describe('First two terms', function() {
       assert.strictEqual(main.fibonacci(1), 1);
     });
 });
+
+describe('Negative input handling', function() {
+    it('should return undefinited for negative input like -5', function(){
+        assert.strictEqual(main.fibonacci(-5), undefined);
+    });
+});
